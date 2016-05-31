@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C21217161CF945EB009B8025 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = C21217151CF945EB009B8025 /* pokemon.csv */; };
+		C21217191CF947C2009B8025 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21217181CF947C2009B8025 /* Pokemon.swift */; };
+		C25BBB541CFD124A00A1A4EA /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25BBB531CFD124A00A1A4EA /* PokeCell.swift */; };
 		C2AC3BD91CF9405E00E7503E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC3BD81CF9405E00E7503E /* AppDelegate.swift */; };
 		C2AC3BDB1CF9405E00E7503E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC3BDA1CF9405E00E7503E /* ViewController.swift */; };
 		C2AC3BDE1CF9405E00E7503E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2AC3BDC1CF9405E00E7503E /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C21217151CF945EB009B8025 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		C21217181CF947C2009B8025 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		C25BBB531CFD124A00A1A4EA /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		C2AC3BD51CF9405D00E7503E /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2AC3BD81CF9405E00E7503E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2AC3BDA1CF9405E00E7503E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C21217171CF947B2009B8025 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C21217181CF947C2009B8025 /* Pokemon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C25BBB521CFD121800A1A4EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C25BBB531CFD124A00A1A4EA /* PokeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		C2AC3BCC1CF9405D00E7503E = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +76,11 @@
 		C2AC3BD71CF9405E00E7503E /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				C21217171CF947B2009B8025 /* Model */,
+				C25BBB521CFD121800A1A4EA /* View */,
 				C2AC3BD81CF9405E00E7503E /* AppDelegate.swift */,
 				C2AC3BDA1CF9405E00E7503E /* ViewController.swift */,
+				C21217151CF945EB009B8025 /* pokemon.csv */,
 				C2AC3BDC1CF9405E00E7503E /* Main.storyboard */,
 				C2AC3BDF1CF9405E00E7503E /* Assets.xcassets */,
 				C2AC3BE11CF9405E00E7503E /* LaunchScreen.storyboard */,
@@ -124,6 +149,7 @@
 			files = (
 				C2AC3BE31CF9405E00E7503E /* LaunchScreen.storyboard in Resources */,
 				C2AC3BE01CF9405E00E7503E /* Assets.xcassets in Resources */,
+				C21217161CF945EB009B8025 /* pokemon.csv in Resources */,
 				C2AC3BDE1CF9405E00E7503E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25BBB541CFD124A00A1A4EA /* PokeCell.swift in Sources */,
 				C2AC3BDB1CF9405E00E7503E /* ViewController.swift in Sources */,
 				C2AC3BD91CF9405E00E7503E /* AppDelegate.swift in Sources */,
+				C21217191CF947C2009B8025 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +314,7 @@
 				C2AC3BE91CF9405E00E7503E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
